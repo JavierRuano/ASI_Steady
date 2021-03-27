@@ -2,8 +2,16 @@
 Python program using xarray for calculating Air stagnation indices over the Euro-Mediterranean region
 http://steady-ucm.org for details
 
+Using modules
+http://xarray.pydata.org/en/stable/
+https://pandas.pydata.org/
+https://dask.org/
+With License
+https://www.gnu.org/licenses/gpl-3.0.html
 
-Welcome to the ASI_Steady wiki! http://147.96.21.169/
+Welcome to the ASI_Steady wiki! 
+First you should read about copernicus
+https://cds.climate.copernicus.eu/api-how-to
 
 ![image](https://user-images.githubusercontent.com/34353851/112707260-55ccc600-8eaa-11eb-9088-98c382bb3d87.png)
 
