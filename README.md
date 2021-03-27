@@ -62,3 +62,6 @@ def refresh_Graphics_CSV(self, NETCDF_FILES_FOLDER, start, end, lat_uno, lat_dos
 ### 3
 ![image](https://user-images.githubusercontent.com/34353851/112707354-01761600-8eab-11eb-8aea-1cf8e06ce9c3.png)
 
+
+
+https://www.gnu.org/licenses/gpl-3.0.html
