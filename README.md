@@ -10,8 +10,12 @@ With License
 https://www.gnu.org/licenses/gpl-3.0.html
 
 Welcome to the ASI_Steady wiki! 
+
 First you should read about copernicus
+![image](https://user-images.githubusercontent.com/34353851/112830792-4ceb1880-9093-11eb-8c59-28089c3761d2.png)
+
 https://cds.climate.copernicus.eu/api-how-to
+
 
 ![image](https://user-images.githubusercontent.com/34353851/112707260-55ccc600-8eaa-11eb-9088-98c382bb3d87.png)
 
