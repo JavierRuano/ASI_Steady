@@ -25,8 +25,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        apt-get install libproj-dev proj-data proj-bin  
-        apt-get install libgeos-dev  
+        sudo apt-get install libproj-dev proj-data proj-bin  
+        sudo apt-get install libgeos-dev  
         python -m pip install --upgrade pip
         python -m pip install cython flake8 pytest numpy
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
