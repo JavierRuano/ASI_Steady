@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -17,14 +16,29 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install Dependencies
+
+    - name: Install system dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        sudo apt-get update
+        sudo apt-get install -y libproj-dev proj-data proj-bin
+        sudo apt-get install -y libgeos-dev
+        sudo apt-get install -y libfreetype6-dev
+        sudo apt-get install -y libjpeg-dev
+        sudo apt-get install -y libpng-dev
+
+    - name: Upgrade pip and setuptools
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install -r requirements.txt
+
     - name: Run Tests
       run: |
         python manage.py test
