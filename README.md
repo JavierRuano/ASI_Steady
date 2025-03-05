@@ -1,4 +1,7 @@
 # ASI_Steady
+Se ha usado apache y django
+https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/modwsgi/
+
 Python program using xarray for calculating Air stagnation indices over the Euro-Mediterranean region
 http://steady-ucm.org for details
 
