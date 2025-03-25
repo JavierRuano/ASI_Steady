@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.9"
+  - "3.10"
+
+# Instalar dependencias (si usas requirements.txt o setup.py)
+install:
+  - pip install -r requirements.txt  # Si tienes un archivo de dependencias
+  # O bien, si el proyecto está en modo desarrollo:
+  # - pip install -e .
+notifications:
+  email:
+    recipients:
+      - javier.ruanno@gmail.com  # Reemplaza con tu email
+    on_success: change  # Envía email solo si el estado cambia (ej: de error a éxito)
+    on_failure: always  # Envía email siempre que falle
