@@ -1,13 +1,12 @@
-language: python
-python:
-  - "3.9"
-  - "3.10"
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq libgeos-dev=3.10.2-1 libproj-dev proj-data proj-bin
+  - sudo apt-get install -qq libgeos++-dev  # Opcional, para más funcionalidades
 
-# Instalar dependencias (si usas requirements.txt o setup.py)
 install:
+  - pip install --upgrade pip
+  - pip install wheel
   - pip install -r requirements.txt  # Si tienes un archivo de dependencias
-  # O bien, si el proyecto está en modo desarrollo:
-  # - pip install -e .
 notifications:
   email:
     recipients:
